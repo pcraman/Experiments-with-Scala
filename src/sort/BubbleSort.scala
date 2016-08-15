@@ -1,8 +1,8 @@
 
 object BubbleSort {
 	def main(args : Array[String]) {
-		var l = Array(30,32,14,57,49,23)
-		var res = bubbleSort(l)
+		val l = Array(30,32,14,57,49,23)
+		val res = bubbleSort(l)
 		for (i <- 0 to (res.length - 1)) {
 			print (res(i) + " ")
 		}
