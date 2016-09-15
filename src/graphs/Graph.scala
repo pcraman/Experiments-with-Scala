@@ -17,10 +17,6 @@ class Graph (var n: Int){
       println("Adding the edge " + v1 + " " + v2)
       val e1 = new Edge(v1, v2)
       adjacencyList += e1.v1 -> (e1.v2::adjacencyList.getOrElse(e1.v1, Nil))
-      if (!isDirected) {
-        val e2 = new Edge(v2, v1)
-        adjacencyList += e2.v1 -> (e2.v2::adjacencyList.getOrElse(e1.v1, Nil))
-      }
     }
   }
 }
