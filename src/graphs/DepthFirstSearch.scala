@@ -22,9 +22,14 @@ object DepthFirstSearch {
     visited += src
     while (!stack.isEmpty) {
       res  = stack.top :: res
-      g.adjacencyList(stack.pop).filter(!visited.contains(_)).map{
-                                                        s => stack.push(s)
-                                                        visited  += s }
+      if (!g.adjacencyList.contains(stack.top)) {
+        stack.pop
+      } else {
+        g.adjacencyList(stack.pop).
+        filter(!visited.contains(_)).
+        map { s => stack.push(s)
+              visited  += s }
+      }
     }
     res.reverse
   }
