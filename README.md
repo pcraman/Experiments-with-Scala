@@ -21,3 +21,7 @@ Learning scala by implementing text book algorithms
 * Queue
 * Tree
   * Simple binary tree
+* Graphs
+  * Simple Graph
+  * Depth First Search
+  * Breadth First Search 
