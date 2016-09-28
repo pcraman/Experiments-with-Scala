@@ -15,8 +15,8 @@ object SquareRoot {
     def sqrtRoot (left : Int, right : Int) : Int = {
       val mid = getMean(left, right)
       val guess = mid * mid
-      if (guess < x) sqrtRoot(mid + 1, right)
-      else if (guess > x) sqrtRoot(left, mid - 1)
+      if (guess < x) sqrtRoot(mid + 1 , right)
+      else if (guess > x) sqrtRoot(left , mid - 1)
       else mid
     }
     sqrtRoot(1 , x)
