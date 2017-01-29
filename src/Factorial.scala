@@ -1,7 +1,7 @@
 object Factorial {
 	def main(args : Array[String]) {
 		var res = factorialNum(5)
-		println ("Answer = " + res)
+		println ("Answer is " + res)
 	}
 	def factorialNum (n : Int) : Int ={
 		var i = n
